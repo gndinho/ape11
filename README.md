@@ -55,6 +55,12 @@ Fonte:https://www.hostgator.com.br
 
 
 5 - Qual a importância da utilização do controle de versionamento no desenvolvimento de um software?
+5 - Qual a importância da utilização do controle de versionamento no desenvolvimento de um software?
+O software de controle de versão mantém registro de todas as modificações no código em um tipo especial de banco de dados. Se um erro for cometido, os desenvolvedores podem voltar no tempo e comparar versões anteriores do código para ajudar a corrigir o erro enquanto diminuem interrupções para todos os membros da equipe.
+Desenvolvedores de software que trabalham em equipes estão sempre escrevendo novo código-fonte e modificando código-fonte existente. O código de um componente de projeto, aplicativo ou software é, no geral, organizado em uma estrutura de pasta ou "árvore de arquivos". Um desenvolvedor na equipe pode estar trabalhando em um novo recurso, enquanto outro desenvolvedor corrige um bug não relacionado, alterando o código; cada desenvolvedor pode fazer as alterações em várias partes da árvore de arquivos.
+O controle de versão ajuda as equipes a solucionarem esses tipos de problemas, rastreando cada alteração individual feita por cada contribuinte e ajudando a evitar conflito com trabalhos simultâneos. As alterações feitas em uma parte do software podem ser incompatíveis com aquelas feitas por outro desenvolvedor trabalhando ao mesmo tempo.
+
+Fonte: https://www.atlassian.com/br/git/tutorials/what-is-version-control
 
 
 
