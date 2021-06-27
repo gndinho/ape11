@@ -25,28 +25,30 @@
   <section class="sobre">
     <div class="sobre-info">
       
-<b>Para que serve o commit e qual a melhor forma de utilizá-lo?</b>
-
-<p>Em sistemas de controle de versão, como o Git, um commit adiciona as alterações mais recentes do código-fonte para o repositório, tornando essas alterações parte da revisão principal do repositório. 
-É importante ressaltar que os commits nos sistemas de controle de versão são mantidos no repositório indefinidamente.</p> 
-<p>Assim, quando outros usuários fizerem uma atualização ou check-out no repositório, eles receberão a última versão confirmada.
+      
+<h1>Para que serve o commit e qual a melhor forma de utilizá-lo?</h1>
+  
+<h6>Em sistemas de controle de versão, como o Git, um commit adiciona as alterações mais recentes do código-fonte para o repositório, tornando essas alterações parte da revisão principal do repositório. 
+É importante ressaltar que os commits nos sistemas de controle de versão são mantidos no repositório indefinidamente.
+Assim, quando outros usuários fizerem uma atualização ou check-out no repositório, eles receberão a última versão confirmada.
 Os sistemas de controle de versão permitem reverter facilmente para versões anteriores. Nesse contexto, um commit dentro de um sistema de controle de versão é protegido, pois é facilmente revertido, mesmo após o commit ter sido aplicado.</p>
-<p>Para “commitar” no git, basta executar o comando:</p>
+Para “commitar” no git, basta executar o comando:
 git commit -m 'mensagem do commit'
 Isso também pressupõe que os arquivos no diretório atual foram testados da seguinte forma:
 git add .
-<p>O comando acima adiciona todos os arquivos no diretório de trabalho a serem testados para o git commit. 
+O comando acima adiciona todos os arquivos no diretório de trabalho a serem testados para o git commit. 
 Depois que o commit foi aplicado, a última etapa é enviar o commit para o repositório, no caso abaixo nomeado ‘geek’, para o branch master:
 git push geek master
 Você também pode optar por um atalho e adicionar todos os arquivos não testados e fazer um commit ao mesmo tempo com o comando: 
-git commit -a -m 'commit message</p>
+git commit -a -m 'commit message</h6>
 
-<b>Qual a diferença entre commit e push?</b>
-<p>Commit- Este comando é como definir um ponto de verificação no processo de desenvolvimento, para o qual você pode voltar mais tarde, se necessário. Após confirmar as alterações, a próxima coisa que você deseja fazer é enviar as alterações para o servidor remoto.
+<h1>Qual a diferença entre commit e push?</h1>
+ 
+<h6>Commit- Este comando é como definir um ponto de verificação no processo de desenvolvimento, para o qual você pode voltar mais tarde, se necessário. Após confirmar as alterações, a próxima coisa que você deseja fazer é enviar as alterações para o servidor remoto.
 O Push envie a ramificação especificada para, junto com todos os commits e objetos internos necessários, criando uma ramificação local no repositório de destino. Para evitar que você sobrescreva commits, o Git não permite o envio quando ele resultar em um merge sem avanço rápido no repositório de destino.
-Ou seja, commit definimos o ponto e o push salva esse ponto no servidor.</p>
+Ou seja, commit definimos o ponto e o push salva esse ponto no servidor.</h6>
 
-<b>O que é tag?</b>
+<h1>O que é tag?</h1>
 <p>As tags no git funcionam como marcadores para commits específicos. São como branches, exceto que tags não são deletadas. São constantemente usadas para demarcar versões de software.
 Existem dois tipos de tag: as lightweight tags e as annotated tags.
 Lightweight Tag (tag leve) Uma lightweight tag serve como um indicador de commit. É basicamente um indicador de branch que nunca muda. É apenas um ponteiro que indica qual commit representa essa tag. Contém também um arquivo checksum associado.
@@ -54,14 +56,14 @@ Geralmente é utilizada internamente pela equipe para dar nomes e indicadores pa
 Annotated tag (tag com notação)
 Annotated tags são salvas como objetos completos no banco de dados do Git. Elas contêm um arquivo checksum, o nome do criador da tag, e-mail do criador e a data de criação. Possuem também uma mensagem associada.
 São utilizadas em lançamentos públicos do software e impactam diretamente no usuário do software. Podem ou não vir acompanhadas de mudanças na API pública.</p>
-<b>O que é branch?</b>
-<p>Branch, em tradução literal, significa “ramo”. No mundo da programação, ela tem o mesmo significado: uma branch é uma ramificação do seu projeto. Os repositórios no GitHub funcionam como uma árvore.
+<h1>O que é branch?</h1>
+<h6>Branch, em tradução literal, significa “ramo”. No mundo da programação, ela tem o mesmo significado: uma branch é uma ramificação do seu projeto. Os repositórios no GitHub funcionam como uma árvore.
 uma ramificação no git é um ponteiro para as alterações feitas nos arquivos do projeto. É útil em situações nas quais você deseja adicionar um novo recurso ou corrigir um erro, gerando uma nova ramificação garantindo que o código instável não seja mesclado nos arquivos do projeto principal. Depois de concluir a atualização dos códigos da ramificação, você pode mesclar a ramificação com a principal, geralmente chamada de master.
-Em aplicações desenvolvidas por mais de uma pessoa, é uma boa prática que além da master, cada desenvolvedor crie e desenvolva seu código em sua própria branch, que pode ter qualquer nome.</p>
+Em aplicações desenvolvidas por mais de uma pessoa, é uma boa prática que além da master, cada desenvolvedor crie e desenvolva seu código em sua própria branch, que pode ter qualquer nome.</h6>
 
 
-<b>Como resolver possíveis conflitos no Git?</b>
-<p>Infelizmente, quando trabalhamos com repositório
+<h1>Como resolver possíveis conflitos no Git?</h1>
+<h6>Infelizmente, quando trabalhamos com repositório
 s, estamos sujeitos a nos deparar com conflitos, mesmo trabalhando sozinhos, em um único repositório.
 Para falarmos sobre os conflitos possíveis, utilizaremos nosso próprio exemplo. Estamos dentro do repositório aulagit. Verificamos se os branchs estavam no mesmo commit, percebemos que os branchs não estavam sincronizados. Rodamos o comando abaixo, para sincronizá-los.
 $ git merge novobranch
@@ -122,7 +124,7 @@ All conflicts fixed but you are still merging.
   (use "git commit" to conclude merge)
 Temos a mensagem de que todos os conflitos foram resolvidos, mas que precisamos rodar o commit, para que a ação de merge seja concluída.
 $ git commit -m "Resolvendo conflito"
-Temos a nossa ação completa e sem conflito algum. Isso gera um commit a mais em nosso log, para informar que está tudo correto e sem conflitos.</p>
+Temos a nossa ação completa e sem conflito algum. Isso gera um commit a mais em nosso log, para informar que está tudo correto e sem conflitos.</h6>
 <p>Referencias:
 https://blog.geekhunter.com.br/
 https://blog.geekhunter.com.br
