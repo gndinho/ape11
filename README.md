@@ -1,4 +1,3 @@
-APE11
 1 - O que é o Git?
 2 - O que é versionamento de software?
 3 - Por que utilizar o Git como controle de versionamento?
